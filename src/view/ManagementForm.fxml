@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootManagement" opacity="0.63" prefHeight="681.0" prefWidth="907.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ManagementFormController">
+   <children>
+      <AnchorPane layoutX="25.0" layoutY="149.0" prefHeight="439.0" prefWidth="851.0" style="-fx-background-color: skyblue; -fx-border-color: ffffff; -fx-background-radius: 6; -fx-border-radius: 6; -fx-border-width: 2;">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </AnchorPane>
+      <ImageView fitHeight="675.0" fitWidth="935.0" layoutX="2.0" opacity="0.29" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../6591764_preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutY="-1.0" opacity="0.81" prefHeight="31.0" prefWidth="923.0" style="-fx-background-color: blue;">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <Label layoutX="-1.0" layoutY="660.0" opacity="0.81" prefHeight="21.0" prefWidth="927.0" style="-fx-background-color: blue;">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <Text fill="WHITE" layoutX="30.0" layoutY="101.0" opacity="0.99" strokeType="OUTSIDE" strokeWidth="0.0" text="Parking System" wrappingWidth="347.6708984375">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.44">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Text>
+      <Separator layoutX="32.0" layoutY="124.0" opacity="0.62" prefHeight="1.0" prefWidth="842.0" />
+      <Separator layoutX="31.0" layoutY="614.0" opacity="0.62" prefHeight="3.0" prefWidth="842.0" />
+      <AnchorPane layoutX="438.0" layoutY="-264.0" opacity="0.66" prefHeight="851.0" prefWidth="25.0" rotate="90.0" style="-fx-background-color: black;">
+         <effect>
+            <Lighting diffuseConstant="1.83" specularConstant="1.06" specularExponent="33.66" surfaceScale="2.6">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </AnchorPane>
+      <Pane layoutX="25.0" layoutY="174.0" opacity="0.42" prefHeight="414.0" prefWidth="205.0" style="-fx-background-color: black;">
+         <effect>
+            <Lighting diffuseConstant="1.54" specularConstant="0.81" specularExponent="32.2" surfaceScale="1.62">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Pane>
+      <ComboBox fx:id="ComboSelectAction" layoutX="245.0" layoutY="191.0" prefHeight="31.0" prefWidth="244.0" promptText="On Parking" visible="false" />
+      <Button fx:id="btnAddDriver" layoutX="51.0" layoutY="281.0" mnemonicParsing="false" onAction="#btnAddDriverOnAction" onMouseEntered="#btnAddDriverOMEn" onMouseExited="#btnAddDriverOMEx" prefHeight="31.0" prefWidth="149.0" style="-fx-background-color: blue;" text="Add Driver" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.32" specularConstant="1.08" specularExponent="29.76">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnAddVehicle" layoutX="51.0" layoutY="198.0" mnemonicParsing="false" onAction="#btnAddVehicleOnAction" onMouseEntered="#btnAddVehicleOMEn" onMouseExited="#btnAddVehicleOMEx" prefHeight="31.0" prefWidth="149.0" style="-fx-background-color: blue;" text="Add Vehicle" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.32" specularConstant="1.08" specularExponent="29.76">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <AnchorPane fx:id="rootOnDelivery" layoutX="245.0" layoutY="247.0" visible="false">
+         <children>
+            <TableView fx:id="tblOnDelivery" layoutX="2.0" opacity="0.71" prefHeight="320.0" prefWidth="608.0" style="-fx-background-color: black;">
+              <columns>
+                <TableColumn prefWidth="127.0" text="Vehicle Number" />
+                <TableColumn minWidth="0.0" prefWidth="129.0" text="Vehicle Type" />
+                  <TableColumn minWidth="0.0" prefWidth="175.0" text="Driver Name" />
+                  <TableColumn minWidth="0.0" prefWidth="174.0" text="Left Time" />
+              </columns>
+               <effect>
+                  <Lighting diffuseConstant="1.32" specularConstant="1.2" specularExponent="28.29" surfaceScale="2.23">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="rootInParking" layoutX="246.0" layoutY="247.0" visible="false">
+         <children>
+            <TableView fx:id="tblOnParking" opacity="0.71" prefHeight="320.0" prefWidth="606.0" style="-fx-background-color: black;">
+               <columns>
+                  <TableColumn prefWidth="139.0" text="Vehicle Number" />
+                  <TableColumn minWidth="0.0" prefWidth="148.0" text="Vehicle Type" />
+                  <TableColumn minWidth="0.0" prefWidth="140.0" text="Parking Slot" />
+                  <TableColumn minWidth="0.0" prefWidth="161.0" text="Parked Time" />
+               </columns>
+               <effect>
+                  <Lighting diffuseConstant="1.32" specularConstant="1.2" specularExponent="28.29" surfaceScale="2.23">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnViewVehicle" layoutX="51.0" layoutY="369.0" mnemonicParsing="false" onAction="#btnViewVehicleOnAction" onMouseEntered="#btnViewVehicleOMEn" onMouseExited="#btnViewVehicleOMEx" prefHeight="31.0" prefWidth="149.0" style="-fx-background-color: blue;" text="View Vehicles" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.32" specularConstant="1.08" specularExponent="29.76">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnViewDrivers" layoutX="53.0" layoutY="459.0" mnemonicParsing="false" onAction="#ViewDriversOnAction" onMouseEntered="#btnViewDriversOMEn" onMouseExited="#btnViewDriversOMEx" prefHeight="31.0" prefWidth="149.0" style="-fx-background-color: blue;" text="View Drivers" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.32" specularConstant="1.08" specularExponent="29.76">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnLogout" layoutX="54.0" layoutY="542.0" mnemonicParsing="false" onAction="#btnLogoutOnAction" onMouseEntered="#btnLogoutOMEn" onMouseExited="#btnLogoutOMEx" prefHeight="31.0" prefWidth="149.0" style="-fx-background-color: green;" text="Log out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.32" specularConstant="1.08" specularExponent="29.76">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <AnchorPane fx:id="rootAddVehicle" layoutX="264.0" layoutY="204.4970703125" visible="false">
+         <children>
+            <TextField fx:id="txtVehicleNumber" layoutY="60.5029296875" prefHeight="31.0" prefWidth="244.0" promptText="Vehicle Number">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="txtMaximumWeight" layoutY="139.5029296875" prefHeight="31.0" prefWidth="244.0" promptText="Maximum Weight">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="txtNoOfPassengers" layoutY="219.5029296875" prefHeight="31.0" prefWidth="244.0" promptText="No Of Passengers">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Button fx:id="btnVehicleAdd" layoutX="483.0" layoutY="335.5029296875" mnemonicParsing="false" onAction="#btnVehicleAddOnAction" onMouseEntered="#btnAddOMEn" onMouseExited="#btnAddOMEx" prefHeight="31.0" prefWidth="116.0" style="-fx-background-color: blue;" text="+ADD" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.32" specularConstant="1.08" specularExponent="29.76">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Text fill="WHITE" layoutY="21.0" opacity="0.93" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Vehicle" wrappingWidth="149.0000159740448">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <Separator layoutY="30.5029296875" opacity="0.62" prefHeight="3.0" prefWidth="561.0" />
+            <Button fx:id="btnbackVehicle" layoutX="351.0" layoutY="335.5029296875" mnemonicParsing="false" onAction="#btnbackVehicleOnAction" onMouseEntered="#btnBackOMEn" onMouseExited="#btnBackOMEx" prefHeight="31.0" prefWidth="116.0" style="-fx-background-color: blue;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.32" specularConstant="1.08" specularExponent="29.76">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Separator layoutX="5.0" layoutY="349.5029296875" opacity="0.62" prefHeight="3.0" prefWidth="332.0" />
+            <ComboBox fx:id="comboVehicleType" layoutX="300.0" layoutY="61.0" prefHeight="31.0" prefWidth="264.0" promptText="Vehicle Type" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="rootAddDriver" layoutX="260.0" layoutY="206.4970703125" visible="false">
+         <children>
+            <TextField fx:id="txtDriverName" layoutY="60.5029296875" prefHeight="31.0" prefWidth="244.0" promptText="Driver Name">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="txtDriverNIC" layoutY="135.5029296875" prefHeight="31.0" prefWidth="244.0" promptText="Driver NIC">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="txtDriverLicenseNo" layoutY="213.5029296875" prefHeight="31.0" prefWidth="244.0" promptText="Driver License No">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="txtDriverContactNo" layoutX="315.0" layoutY="60.5029296875" prefHeight="31.0" prefWidth="244.0" promptText="Contact Number">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Button fx:id="btnDriverAdd" layoutX="483.0" layoutY="335.5029296875" mnemonicParsing="false" onAction="#btnDriverAddOnAction" onMouseEntered="#btnDriverAddOMEn" onMouseExited="#btnDriverAddOMEx" prefHeight="31.0" prefWidth="116.0" style="-fx-background-color: blue;" text="+ADD" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.32" specularConstant="1.08" specularExponent="29.76">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Text fill="WHITE" layoutY="21.0" opacity="0.93" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Driver" wrappingWidth="149.0000159740448">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <Separator layoutY="30.5029296875" opacity="0.62" prefHeight="3.0" prefWidth="561.0" />
+            <Button fx:id="btnBackDriver" layoutX="351.0" layoutY="335.5029296875" mnemonicParsing="false" onAction="#btnBackDriverOnAction" onMouseEntered="#btnBackDriverOMEn" onMouseExited="#btnBackDriverOMEx" prefHeight="31.0" prefWidth="116.0" style="-fx-background-color: blue;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.32" specularConstant="1.08" specularExponent="29.76">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Separator layoutX="5.0" layoutY="349.5029296875" opacity="0.62" prefHeight="3.0" prefWidth="332.0" />
+            <TextField fx:id="txtDriverAddress" layoutY="290.0" prefHeight="31.0" prefWidth="425.0" promptText="Adreess">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="rootAllVehiclesDetails" prefHeight="668.0" prefWidth="920.0" style="-fx-background-color: blue;" visible="false">
+         <children>
+            <Label prefHeight="31.0" prefWidth="920.0" style="-fx-background-color: blue;">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Label>
+            <Label layoutY="648.0" prefHeight="21.0" prefWidth="920.0" style="-fx-background-color: blue;">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Label>
+            <Text fill="WHITE" layoutX="28.0" layoutY="110.0" opacity="0.71" strokeType="OUTSIDE" strokeWidth="0.0" text="All Vehicles Details" wrappingWidth="338.83984375">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.9" specularConstant="1.52" specularExponent="24.87" surfaceScale="1.26">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Text>
+            <Separator layoutX="25.0" layoutY="130.0" prefHeight="0.0" prefWidth="859.0" />
+            <Button fx:id="btnBack3" layoutX="777.0" layoutY="605.0" mnemonicParsing="false" onAction="#btnBackAllVehicleOnAction" onMouseEntered="#btnBack3OMEn" onMouseExited="#btnBack3OMEx" opacity="0.89" prefHeight="31.0" prefWidth="119.0" style="-fx-background-color: blue;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.54" specularConstant="1.49" specularExponent="36.59" surfaceScale="1.62">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <TableView fx:id="tblAllVehicleDetails" layoutX="21.0" layoutY="152.0" prefHeight="436.0" prefWidth="878.0">
+               <columns>
+                  <TableColumn fx:id="colVehicleName" prefWidth="279.0" text="Vehicle Name" />
+                  <TableColumn fx:id="colVehicleType" minWidth="0.0" prefWidth="197.0" text="Vehicle Type" />
+                  <TableColumn fx:id="colMaxWeight" minWidth="0.0" prefWidth="202.0" text="Maximum Weight(Kg)" />
+                  <TableColumn fx:id="colNoOfPassengers" minWidth="0.0" prefWidth="199.0" text="Number Of Passengers" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="rootAllDriversDetails" layoutX="-4.0" layoutY="-1.0" prefHeight="668.0" prefWidth="920.0" style="-fx-background-color: blue;" visible="false">
+         <children>
+            <Label prefHeight="31.0" prefWidth="927.0" style="-fx-background-color: blue;">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Label>
+            <Label layoutY="648.0" prefHeight="21.0" prefWidth="927.0" style="-fx-background-color: blue;">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Label>
+            <Text fill="WHITE" layoutX="28.0" layoutY="110.0" opacity="0.71" strokeType="OUTSIDE" strokeWidth="0.0" text="All Drivers Details" wrappingWidth="338.83984375">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.9" specularConstant="1.52" specularExponent="24.87" surfaceScale="1.26">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Text>
+            <Separator layoutX="25.0" layoutY="130.0" prefHeight="0.0" prefWidth="859.0" />
+            <Button fx:id="btnBack4" layoutX="777.0" layoutY="605.0" mnemonicParsing="false" onAction="#btnBackAllDriversOnAction" onMouseEntered="#btnBack4OMEn" onMouseExited="#btnBack4OMEx" opacity="0.89" prefHeight="31.0" prefWidth="119.0" style="-fx-background-color: blue;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.54" specularConstant="1.49" specularExponent="36.59" surfaceScale="1.62">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <TableView fx:id="tblAllDriversDetails" layoutX="23.0" layoutY="150.0" prefHeight="436.0" prefWidth="881.0">
+               <columns>
+                  <TableColumn fx:id="colDriverName" prefWidth="170.0" text="Driver Name" />
+                  <TableColumn fx:id="colNIC" minWidth="0.0" prefWidth="170.0" text="NIC" />
+                  <TableColumn fx:id="colDrivingLicenseNo" minWidth="0.0" prefWidth="147.0" text="Driving License No" />
+                  <TableColumn fx:id="colAddress" minWidth="0.0" prefWidth="209.0" text="Address" />
+                  <TableColumn fx:id="colContact" minWidth="0.0" prefWidth="184.0" text="Contact" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="lblSuccessfully" layoutX="266.0" layoutY="233.0" prefHeight="21.0" prefWidth="332.0" text="Add Successfully ......." textFill="#066b23" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
